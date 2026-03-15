@@ -8,7 +8,7 @@ body{
  color:white; 
 }
 
-.container-grid{
+.homepage .container-grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap:20px;
@@ -21,7 +21,7 @@ body{
   background-attachment:fixed;
 }
 
-.container-box{
+.homepage .container-box{
   border:3px solid black;
   padding:20px;
   background:#50C878;
@@ -32,13 +32,3 @@ body{
 }
 
 /*data.html modifiers*/
-
-.dataSet{
-  background-color:#efe4d6;
-}
-.dataSet a{
- color:black; 
-}
-.dataSet #searchBar{
- margin-top:20px; 
-}
