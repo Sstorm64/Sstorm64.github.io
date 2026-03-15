@@ -1,0 +1,44 @@
+body{
+  font-family: Emigre;
+}
+
+/*index.html modifiers*/
+
+.homepage h1{
+ color:white; 
+}
+
+.container-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+  margin-top:30px;
+}
+.homepage{
+  background-image:url("background.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.container-box{
+  border:3px solid black;
+  padding:20px;
+  background:#50C878;
+}
+
+.homepage .highlight{
+  background:blue;
+}
+
+/*data.html modifiers*/
+
+.dataSet{
+  background-color:#efe4d6;
+}
+.dataSet a{
+ color:black; 
+}
+.dataSet #searchBar{
+ margin-top:20px; 
+}
