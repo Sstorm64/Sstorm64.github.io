@@ -34,9 +34,56 @@ body{
 }
 
 /*data.html modifiers*/
-.dataSearch .pokemonrow{
-  display:flex;
+.dataSearch #search{
   align-items:center;
-  gap:10px;
+  gap:20px;
   padding:4px;
+}
+
+.infoPage .statGraph{
+display:flex;
+align-items:center;
+gap:10px;
+margin:5px 0;
+}
+
+.infoPage .statName{
+width:80px;
+}
+
+.infoPage .barBackground{
+width:200px;
+height:15px;
+background:#ddd;
+border-radius:4px;
+overflow:hidden;
+}
+
+.infoPage .barFill{
+height:100%;
+background:#4CAF50;
+}
+
+.infoPage .statValue{
+width:30px;
+text-align:right;
+}
+.infoPage{
+  background-image:url("pokemonDataSet/background.webp");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.dataSearch .container{
+  display:flex;
+  background:whitesmoke;
+  width:250px;
+  opacity:0.9;
+  margin-top:20px;
+}
+.dataSearch{
+  background-image:url("pokemonDataSet/backgroundList.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
 }
