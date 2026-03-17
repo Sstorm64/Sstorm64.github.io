@@ -21,7 +21,8 @@ fetch("pokedex.json")
             ["Defense", pokemonStats.Defense],
             ["Sp. Attack", pokemonStats["Sp. Attack"]],
             ["Sp. Defense", pokemonStats["Sp. Defense"]],
-            ["Speed", pokemonStats.Speed]
+            ["Speed", pokemonStats.Speed],
+            ["BST",(pokemonStats.HP +pokemonStats.Attack+pokemonStats.Defense+pokemonStats.Speed+pokemonStats["Sp. Attack"]+pokemonStats["Sp. Defense"])]
         ];
         const pokemonStatGraph = document.getElementById("statsContainer")
         statCatagories.forEach(stat => {
