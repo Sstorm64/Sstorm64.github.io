@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(){
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id"); /*gets the id from the url and finds the pokemon attached to it */
 fetch("pokedex.json")
@@ -40,3 +41,4 @@ fetch("pokedex.json")
             pokemonStatGraph.appendChild(pokemonStatEntry)
         });
     });
+});
