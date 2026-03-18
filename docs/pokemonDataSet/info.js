@@ -1,13 +1,29 @@
+function loadPokedex() {
+    const stored = localStorage.getItem("pokedex");
+
+    if (stored) {
+        try {
+            return Promise.resolve(JSON.parse(stored));
+        } catch (e) {
+            localStorage.removeItem("pokedex"); // bad data = clear it
+        }
+    }
+
+    return fetch("pokedex.json")
+        .then(res => {
+            if (!res.ok) throw new Error("Fetching JSON failed");
+            return res.json();
+        })
+        .then(data => {
+            localStorage.setItem("pokedex", JSON.stringify(data));
+            return data;
+        });
+}
 document.addEventListener("DOMContentLoaded", function(){
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id"); /*gets the id from the url and finds the pokemon attached to it */
-fetch("pokedex.json")
-.then(res => {
-    if (!res.ok) {
-        throw new Error("Failed to load JSON");
-    }
-    return res.json();
-})    .then(data => {
+ loadPokedex()   
+.then(data => {
         const pokemon = data.find(p => p.id == id); /*returns the pokemon name that matches the id */
         document.getElementById("pokemonNameAndNumber").textContent = "#" + pokemon.id + " " + pokemon.name.english;
 
