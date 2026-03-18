@@ -2,8 +2,12 @@ document.addEventListener("DOMContentLoaded", function(){
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id"); /*gets the id from the url and finds the pokemon attached to it */
 fetch("pokedex.json")
-    .then(res => res.json())
-    .then(data => {
+.then(res => {
+    if (!res.ok) {
+        throw new Error("Failed to load JSON");
+    }
+    return res.json();
+})    .then(data => {
         const pokemon = data.find(p => p.id == id); /*returns the pokemon name that matches the id */
         document.getElementById("pokemonNameAndNumber").textContent = "#" + pokemon.id + " " + pokemon.name.english;
 
