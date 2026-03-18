@@ -43,12 +43,10 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     function populatePokemon(pokemon) {
         const nameEl = document.getElementById("pokemonNameAndNumber");
-        const spriteEl = document.getElementById("pokemonSprite");
         const typeEl = document.getElementById("pokemonType");
         const statsContainer = document.getElementById("statsContainer");
 
         if (nameEl) nameEl.textContent = "#" + pokemon.id + " " + (pokemon.name?.english || "Unknown");
-        if (spriteEl) spriteEl.src = "img/" + pokemon.id + ".png";
         if (typeEl) typeEl.textContent = "Type: " + (pokemon.type?.join(", ") || "Unknown");
 
         if (statsContainer) {
