@@ -6,7 +6,6 @@ fetch("pokedex.json") /*takes all the data from pokdex.json file, converts it to
             let pokemonEntry = document.createElement("div") /*Creates a div that is a class called PokemonEntry it contains the entries of the pokemon from the JSON*/
             pokemonEntry.className = "pokemonEntry" /*adds the class to the said div as pokemon Entry */
             pokemonEntry.innerHTML = `#${pokemon.id} 
-<img src="img/${pokemon.id}.png">
 <a href ="info.html?id=${pokemon.id}">
     ${pokemon.name.english}
 </a>

@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", async function() {
     document.getElementById("pokemonNameAndNumber").textContent =
         "#" + pokemon.id + " " + pokemon.name.english;
 
-    document.getElementById("pokemonSprite").src =
-        "img/" + pokemon.id + ".png";
-
     document.getElementById("pokemonType").textContent =
         "Type: " + pokemon.type.join(", ");
 
