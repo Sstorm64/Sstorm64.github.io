@@ -9,7 +9,7 @@ body{
 }
 
 .homepage{
-  background-image:url("background.jpg");
+  background-image:url("background.gif");
   background-size:cover;
   background-repeat:no-repeat;
   background-attachment:fixed;
@@ -21,7 +21,7 @@ body{
 
 .homepage .sidebar{
   display:flexbox;
-  width:200px;
+  width:240px;
   height:250px;
   opacity:0.8;
  box-sizing: border-box;
@@ -30,7 +30,7 @@ body{
   image-rendering: pixelated; 
   border-image-width: 90px;
   background-color: lightyellow;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   border-image-outset: 10px;
 
@@ -50,7 +50,8 @@ body{
   border-image-slice: 170;
   border-image-width: 100px;
   text-align: center;
-  border-image-outset: 15px;
+  padding:12px;
+  border-image-outset: 18px;
   background: lightblue;
 }
 
