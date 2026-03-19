@@ -5,7 +5,7 @@ body{
 /*index.html modifiers*/
 
 .homepage h1{
- color:white; 
+ color:black; 
 }
 
 .homepage{
@@ -42,12 +42,20 @@ body{
 }
 .homepage .title{
   display:flexbox;
-  background: lightblue;
-  height:200px;
+  width:250px;
   text-align:center;
   background-size:cover;
+  box-sizing: border-box;
+  border-image:url("titleBorder.png");
+  border-image-slice: 170;
+  border-image-width: 100px;
+  text-align: center;
+  border-image-outset: 15px;
+  background: lightblue;
 }
+
 /*data.html modifiers*/
+
 .dataSearch #search{
   align-items:center;
   gap:20px;
@@ -101,3 +109,7 @@ text-align:right;
   background-repeat:no-repeat;
   background-attachment:fixed;
 }
+
+/*mcImbed changes*/
+
+
