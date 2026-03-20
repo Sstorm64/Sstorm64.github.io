@@ -33,6 +33,7 @@ body{
   padding: 1px;
   text-align: center;
   border-image-outset: 10px;
+  float:left;
 
 }
 .homepage h4{  
@@ -53,6 +54,7 @@ body{
   padding:12px;
   border-image-outset: 18px;
   background: lightblue;
+  
 }
 
 /*data.html modifiers*/
