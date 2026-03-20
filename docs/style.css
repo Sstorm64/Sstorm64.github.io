@@ -105,6 +105,11 @@ text-align:right;
   width:250px;
   opacity:0.9;
   margin-top:20px;
+  border-image:url("pokemonDataSet/frame1.png");
+  border-image-slice: 200;
+  border-image-width: 30px;
+  padding:5px;
+  border-image-outset: 10px;
 }
 .dataSearch{
   background-image:url("pokemonDataSet/backgroundList.png");
