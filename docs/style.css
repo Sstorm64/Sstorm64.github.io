@@ -118,6 +118,29 @@ text-align:right;
   background-attachment:fixed;
 }
 
-/*mcImbed changes*/
-
-
+/*pokemonEmeraldJ changes*/
+.pokemonEmerald .title{
+  display: flex;
+    width: 300px;
+    height:55px;
+    border: 50px solid transparent;
+   border-image:url("pokemonDataSet/frame2.png");
+   border-image-slice: 100;
+  border-image-repeat: round;
+  border-image-width: 100;
+  background: lightgoldenrodyellow;
+  padding:20px;
+  background-clip: padding-box;
+}
+.pokemonEmerald{
+background:url("pokemonDataSet/background1.gif");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.pokemonEmerald a{
+color:white;
+}
+.pokemonEmerald .summary{
+  color:white;
+}
