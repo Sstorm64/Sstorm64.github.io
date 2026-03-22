@@ -118,6 +118,14 @@ text-align:right;
   background-attachment:fixed;
 }
 
+.infoPage .otherStat{
+  display: flexbox;
+  background:#4CAF50;
+  width:400px;
+  height:280px;
+  padding:10px;
+}
+
 /*pokemonEmeraldJ changes*/
 .pokemonEmerald .title{
   display: flex;
