@@ -45,6 +45,14 @@ document.addEventListener("DOMContentLoaded", async function() { /*Ansycnous loa
         const pokemonName = document.getElementById("pokemonNameAndNumber"); /*finds all the elements in the HTML that needs this infomation */
         const pokemonType = document.getElementById("pokemonType");
         const statsContainer = document.getElementById("statsContainer");
+         const pokemonWeakness = document.getElementById("weakness");
+          const pokemonHeight = document.getElementById("height");
+           const pokemonWeight = document.getElementById("weight");
+            const pokemonGen = document.getElementById("generation");
+             const pokemonAbility = document.getElementById("ability");
+              const pokemonEgg = document.getElementById("egg_group");
+               const pokemonGender = document.getElementById("gender_ratio");
+                const pokemonCatch = document.getElementById("catch_rate");
 
         if (pokemonName) pokemonName.textContent = "#" + pokemon.id + " " + (pokemon.name?.english || "Unknown");
         if (pokemonType) pokemonType.textContent = "Type: " + (pokemon.type?.join(", ") || "Unknown"); /*Both are error handlings, checks if pokemon name and type exists or else replaces it with null */
@@ -73,6 +81,15 @@ document.addEventListener("DOMContentLoaded", async function() { /*Ansycnous loa
 <span class="statValue">${pokemonStat[1]}</span>`;
                 statsContainer.appendChild(statDiv);
             });
+
         }
+    pokemonWeakness.textContent="Weakness: " + pokemon.formData[0].weaknessTypes.join(", ");
+    pokemonHeight.textContent = "Height: " + pokemon.formData[0].height;
+    pokemonWeight.textContent = "Weight: " + pokemon.formData[0].weight;
+    pokemonGen.textContent = "Generation that it first appeared: " + pokemon.generation;
+    pokemonAbility.textContent="Possible Abilities: " + pokemon.profile.ability.join(", ");
+    pokemonEgg.textContent = "Egg Group: "+ pokemon.profile.egg;
+    pokemonGender.textContent = "Gender Ratio: "+ pokemon.profile.gender;
+    pokemonCatch.textContent= "Catch rate: " + pokemon.profile.catchRate;
     }
 });
