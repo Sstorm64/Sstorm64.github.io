@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", async function() { /*Ansycnous loading with the json file and all the code waits for all the DOM to be loaded */
-     //localStorage.removeItem("pokedex"); //testing line
+     
+    const refreshBtn = document.getElementById("refreshDataBtn");
+
+if (refreshBtn) {
+    refreshBtn.addEventListener("click", () => {
+        localStorage.removeItem("pokedex");
+        alert("Pokédex data cleared. Reloading with fresh data...");
+        window.location.reload(); //clear local storage to reset json to add more data to the website
+    });
+}
+    
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id"); /* gets the Id number from the search bar which is the pokemon number */
 
