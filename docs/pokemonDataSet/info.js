@@ -83,13 +83,13 @@ document.addEventListener("DOMContentLoaded", async function() { /*Ansycnous loa
             });
 
         }
-    pokemonWeakness.textContent="Weakness: " + pokemon.formData[0].weaknessTypes.join(", ");
-    pokemonHeight.textContent = "Height: " + pokemon.formData[0].height;
-    pokemonWeight.textContent = "Weight: " + pokemon.formData[0].weight;
-    pokemonGen.textContent = "Generation that it first appeared: " + pokemon.generation;
-    pokemonAbility.textContent="Possible Abilities: " + pokemon.profile.ability.join(", ");
-    pokemonEgg.textContent = "Egg Group: "+ pokemon.profile.egg;
-    pokemonGender.textContent = "Gender Ratio: "+ pokemon.profile.gender;
-    pokemonCatch.textContent= "Catch rate: " + pokemon.profile.catchRate;
+    if(pokemonWeakness) pokemonWeakness.textContent="Weakness: " + (pokemon?.formData?.[0]?.weaknessTypes?.join(", ")|| "Unknown");
+    if(pokemonHeight)pokemonHeight.textContent = "Height: " + (pokemon?.formData?.[0]?.height||"Unknown");
+    if(pokemonWeight)pokemonWeight.textContent = "Weight: " + (pokemon?.formData?.[0]?.weight||"Unknown");
+   if( pokemonGen) pokemonGen.textContent = "Generation that it first appeared: " + (pokemon?.generation||"Unknown");
+    if(pokemonAbility)pokemonAbility.textContent="Possible Abilities: " + (pokemon?.profile?.ability?.join(", ")||"Unknown");
+   if( pokemonEgg)pokemonEgg.textContent = "Egg Group: "+ (pokemon.profile?.egg||"Unknown");
+    if(pokemonGender)pokemonGender.textContent = "Gender Ratio: "+ (pokemon?.profile?.gender||"Unknown");
+    if(pokemonCatch)pokemonCatch.textContent= "Catch rate: " + (pokemon?.profile?.catchRate||"Unknown");
     }
 });
