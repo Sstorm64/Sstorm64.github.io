@@ -83,7 +83,13 @@ document.addEventListener("DOMContentLoaded", async function() { /*Ansycnous loa
             });
 
         }
-    if(pokemonWeakness) pokemonWeakness.textContent="Weakness: " + (pokemon?.formData?.[0]?.weaknessTypes?.join(", ")|| "Unknown");
+console.log("pokemon object:", pokemon);
+console.log("formData:", pokemon.formData);
+console.log("formData[0]:", pokemon.formData?.[0]);
+console.log("weaknessTypes:", pokemon.formData?.[0]?.weaknessTypes);
+console.log("height:", pokemon.formData?.[0]?.height);
+console.log("weight:", pokemon.formData?.[0]?.weight);
+        if(pokemonWeakness) pokemonWeakness.textContent="Weakness: " + (pokemon?.formData?.[0]?.weaknessTypes?.join(", ")|| "Unknown");
     if(pokemonHeight)pokemonHeight.textContent = "Height: " + (pokemon?.formData?.[0]?.height||"Unknown");
     if(pokemonWeight)pokemonWeight.textContent = "Weight: " + (pokemon?.formData?.[0]?.weight||"Unknown");
    if( pokemonGen) pokemonGen.textContent = "Generation that it first appeared: " + (pokemon?.generation||"Unknown");
