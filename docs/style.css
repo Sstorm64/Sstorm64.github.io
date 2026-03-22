@@ -34,6 +34,8 @@ body{
   text-align: center;
   border-image-outset: 10px;
   float:left;
+  flex-grow: 0;
+  flex-shrink:0;
 
 }
 .homepage h4{  
@@ -54,8 +56,32 @@ body{
   padding:12px;
   border-image-outset: 18px;
   background: lightblue;
+    flex-grow: 0;
+  flex-shrink:0;
   
 }
+
+.homepage .imageUpdate img{
+float:right;
+width:25%;
+height:auto;
+}
+.homepage .imageUpdate{
+  float:right;
+  width:300px;
+  margin-left: 10px;
+  background: lightgreen;
+  opacity: 0.8;
+border-image:url("frame1.png");
+  border-image-slice: 240;
+  border-image-width: 200px;
+  padding:10px;
+  border-image-outset: 15px;
+  flex-grow: 0;
+  flex-shrink:0;
+
+}
+
 
 /*data.html modifiers*/
 
@@ -120,10 +146,16 @@ text-align:right;
 
 .infoPage .otherStat{
   display: flexbox;
-  background:#4CAF50;
+  background:lightgreen;
   width:400px;
   height:280px;
   padding:10px;
+  border-image:url("pokemonDataSet/frame1.png");
+   border-image-slice: 200;
+  border-image-width: 30px;
+  padding:5px;
+  border-image-outset:15px;
+  opacity: 0.8;
 }
 
 /*pokemonEmeraldJ changes*/
