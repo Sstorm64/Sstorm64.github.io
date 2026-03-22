@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function() { /*Ansycnous loading with the json file and all the code waits for all the DOM to be loaded */
+     localStorage.removeItem("pokedex"); //testing line
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id"); /* gets the Id number from the search bar which is the pokemon number */
 
