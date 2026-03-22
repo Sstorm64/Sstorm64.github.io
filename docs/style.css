@@ -148,7 +148,7 @@ text-align:right;
   display: flexbox;
   background:lightgreen;
   width:400px;
-  height:280px;
+  height:auto;
   padding:10px;
   border-image:url("pokemonDataSet/frame1.png");
    border-image-slice: 200;
