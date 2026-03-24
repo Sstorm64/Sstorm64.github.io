@@ -18,7 +18,23 @@
       <span>Welcome to my Website!</span>
        </div>
     </h1>
-  
+  <div class = "music">
+    <div class="player">
+<div class ="buttons">
+  <button id="next"></button>
+  <button id="play"></button>
+  <button id="previous"></button>
+</div>
+
+<input type="range" id="timeDisplay" min ="0" max = '0'>
+<input type="range" id="volumeDisplay" min = "1" max = "100">
+
+<div class = "infoDisplay">
+  <p id="songInfo"></p>
+</div>
+
+    </div>
+  </div>
     <div class = "sidebar">
 <h4>Game Related Stuff</h4>
 <a href="pokemonDataSet/dataSearch.html">Pokemon Data Set</a>
@@ -31,6 +47,6 @@
 <br>
 <a href ="not_found.html">Blog</a>
     </div>
-  
+    <script src="mainPlayer.js"></script>
   </body>
 </html>

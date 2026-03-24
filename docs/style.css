@@ -44,7 +44,6 @@ body{
     margin-top:1;
 }
 .homepage .title{
-  display:flexbox;
   width:250px;
   text-align:center;
   background-size:cover;
@@ -82,6 +81,16 @@ border-image:url("frame1.png");
 
 }
 
+.homepage .music{
+  float:right;  
+  margin-top: 15px;
+  width:320px;
+  height:430px;
+border: 5px solid red;
+background-image:url("mp3.png");
+ position: relative; 
+ z-index: 0;
+}
 
 /*data.html modifiers*/
 
@@ -145,7 +154,6 @@ text-align:right;
 }
 
 .infoPage .otherStat{
-  display: flexbox;
   background:lightgreen;
   width:400px;
   height:auto;
@@ -160,8 +168,7 @@ text-align:right;
 
 /*pokemonEmeraldJ changes*/
 .pokemonEmerald .title{
-  display: flex;
-    width: 300px;
+  width: 300px;
     height:55px;
     border: 50px solid transparent;
    border-image:url("pokemonDataSet/frame2.png");
@@ -198,3 +205,17 @@ color:white;
   width:100%;
   height:100%;
 }
+/*music player style stuff*/
+.homepage .music .buttons button{
+  position: absolute; 
+  z-index: 1;    
+}
+
+.homepage .music #timeDisplay, .homepage .music #volumeDisplay {
+  position:absolute;
+  z-index:1;
+}
+#play { top: 305px; left: 160px; background-image: url('play.png'); }
+#previous { top: 305px; left: 200px; background-image: url('prev.png'); }
+#next { top: 305px; left: 120px; background-image: url('next.png'); }
+#timeDisplay{top:285px;left: 100px;}
