@@ -21,12 +21,18 @@
   <div class = "music">
     <div class="player">
 <div class ="buttons">
-  <button id="next"></button>
-  <button id="play"></button>
-  <button id="previous"></button>
+  <button id="next">
+    <img src="Music/prev.png">
+  </button>
+  <button id="play">
+    <img src="Music/play.png">
+  </button>
+  <button id="previous">
+    <img src="Music/next.png">
+  </button>
 </div>
 
-<input type="range" id="timeDisplay" min ="0" max = '0'>
+<div class="curr_length" id = "curr_time">00:00</div><input type="range" id="timeDisplay" min ="0" max = '100' value ="0" step="0.1"> <div class="total_leng" id="currentTime">00:00</div>
 <input type="range" id="volumeDisplay" min = "1" max = "100">
 
 <div class = "infoDisplay">
