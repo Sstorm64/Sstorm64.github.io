@@ -14,11 +14,11 @@ let songFlag = false;
 let songList = [
 {
     name:"Moog City",
-    path:"Music/Moog_City.mp3"
+    path:"https://file.garden/acRtdm8XdjJpG0Ir/Moog_City.mp3"
 },
 {
     name:"Dancin",
-    path:"Music/KRONO.mp3"
+    path:"https://file.garden/acRtdm8XdjJpG0Ir/KRONO.mp3"
 }
 ];
 
