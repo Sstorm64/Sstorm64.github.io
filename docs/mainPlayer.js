@@ -60,8 +60,6 @@ function nextSong(){
   if (songNum >= songList.length) songNum = 0; 
   loadSong(songNum);
   playSong();
-    console.log("Next songNum:", songNum); 
-
 }
 
 function previousSong(){
@@ -69,8 +67,6 @@ function previousSong(){
   if (songNum < 0) songNum = songList.length - 1;
   loadSong(songNum);
   playSong();
-console.log("Next songNum:", songNum); 
-
 }
 function readProgress(){
 let newProgress =0;
