@@ -19,6 +19,14 @@ let songList = [
 {
     name:"Dancin",
     path:"https://file.garden/acRtdm8XdjJpG0Ir/KRONO.mp3"
+},
+{
+    name:"Mice on Venus",
+    path:"https://file.garden/acRtdm8XdjJpG0Ir/Mice%20on%20Venus.mp3"
+},
+{
+    name:"Fly away now",
+    path:"https://file.garden/acRtdm8XdjJpG0Ir/531553_Teddyloid---Fly-Away.mp3"
 }
 ];
 
