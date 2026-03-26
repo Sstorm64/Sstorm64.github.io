@@ -285,7 +285,7 @@ border: 5px solid white;
   left:62px;
 }
 #play { top: 295px; left: 150px; }
-#previous { top: 295px; left: 190px; }
-#next { top: 295px; left: 110px; }
+#next { top: 295px; left: 190px; }
+#previous { top: 295px; left: 110px; }
 #timeDisplay{top:285px;left: 100px;}
 #volumeDisplay{top:200px;left:100px;}

@@ -7,10 +7,10 @@ let volumeSlider = document.getElementById("volumeDisplay");
 let displaySlider = document.getElementById("timeDisplay");
 let songDuration = document.getElementById("currentTime")
 let myPlace = document.getElementById("curr_time");
-
 let player = document.createElement("audio");
 let songNum = 0;
 let songFlag = false;
+let songChangeFlag = false;
 let songList = [
 {
     name:"Moog City",
@@ -36,11 +36,9 @@ function resetValue(){
 }
 
 function loadSong(songNum){
-    resetValue();
-    
-player.src = songList[songNum].path;
-player.load();
+    player.src = songList[songNum].path;
 songInfo.textContent = songList[songNum].name;
+    resetValue();
 
 }
  function playOrPause(){
@@ -58,25 +56,21 @@ player.pause();
 songFlag = false;
  }
 function nextSong(){
- if (songNum <songList.length-1){
-    songNum= songNum +1;
- }
- else{
-    songNum = 0;
- }
- loadSong(songNum);
- playSong();
+    songNum++;
+  if (songNum >= songList.length) songNum = 0; 
+  loadSong(songNum);
+  playSong();
+    console.log("Next songNum:", songNum); 
+
 }
 
 function previousSong(){
-if (songNum>0){
-    songNum = songNum -1;
-}
-else{
-    songNum = songList.length-1;
-}
-loadSong(songNum);
-playSong();
+ songNum--;
+  if (songNum < 0) songNum = songList.length - 1;
+  loadSong(songNum);
+  playSong();
+console.log("Next songNum:", songNum); 
+
 }
 function readProgress(){
 let newProgress =0;
@@ -110,6 +104,8 @@ progress = player.currentTime *(100/player.duration);
 displaySlider.value = progress;
 }
 
+player.addEventListener("ended", nextSong);
+
 playSongButton.addEventListener("click", playOrPause);
 nextSongButton.addEventListener("click", nextSong);
 previousSongButton.addEventListener("click", previousSong);
@@ -123,5 +119,4 @@ player.addEventListener("timeupdate", () => {
 });
 
 player.addEventListener("loadedmetadata", timeUP);
-player.addEventListener("ended", nextSong);
 loadSong(songNum);
