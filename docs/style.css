@@ -99,6 +99,20 @@ background-image:url("mp3.png");
 
 }
 
+.homepage .markey p{
+  color: white;
+}
+.homepage .markey{ 
+  width:900px;
+  height:400px;
+transform: translateX(-45px);
+  margin-right:auto;
+  margin-top: 0px ;
+  margin-bottom: 0;
+  border: 2px solid red;
+  margin-left: auto;
+
+}
 /*data.html modifiers*/
 
 .dataSearch #search{
@@ -172,6 +186,7 @@ text-align:right;
   border-image-outset:15px;
   opacity: 0.8;
 }
+
 
 /*pokemonEmeraldJ changes*/
 .pokemonEmerald .title{
