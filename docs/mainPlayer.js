@@ -27,6 +27,10 @@ let songList = [
 {
     name:"Fly away now",
     path:"https://file.garden/acRtdm8XdjJpG0Ir/531553_Teddyloid---Fly-Away.mp3"
+},
+{
+    name:"Asgore's Theme",
+    path:"https://file.garden/acRtdm8XdjJpG0Ir/695586_Bergentrckung-Asgores-them.mp3"
 }
 ];
 
