@@ -8,20 +8,19 @@ body{
   justify-content: center; 
 }
 .homepage .left {
-width: 320px;
-  flex-shrink: 0;
+width: 240px;
+  flex-shrink: 0; 
 }
 .homepage .center {
   width: 700px;
     flex-shrink: 0;
-    display:flex;
+  display:flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 50px;
 }
 
 .homepage .right {
-  width: 320px; 
+  width: 240px; 
   flex-shrink: 0;
 }
 
@@ -88,6 +87,7 @@ float:right;
 .homepage .imageUpdate{
   width:300px;
   margin-left: 10px;
+  margin-top: 10px;
   background: lightgoldenrodyellow;
   opacity: 0.9;
 border-image:url("frame1.png");
